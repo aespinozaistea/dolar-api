@@ -1,0 +1,112 @@
+:root {
+  --color-fondo: #f4f6f8;
+  --color-superficie: #ffffff;
+  --color-texto: #1f2933;
+  --color-secundario: #52606d;
+  --color-borde: #d9e2ec;
+  --color-acento: #0b7285;
+  --sombra: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.5;
+}
+
+header {
+  background-color: var(--color-acento);
+  color: #ffffff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+#status {
+  margin: 0 0 1rem;
+  color: var(--color-secundario);
+  text-align: center;
+}
+
+#cotizaciones {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.cotizacion {
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: 8px;
+  padding: 1.25rem;
+  box-shadow: var(--sombra);
+}
+
+.cotizacion h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: var(--color-acento);
+}
+
+.cotizacion dl {
+  margin: 0;
+}
+
+.fila {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  border-top: 1px solid var(--color-borde);
+}
+
+.fila:first-child {
+  border-top: none;
+}
+
+.fila dt {
+  color: var(--color-secundario);
+}
+
+.fila dd {
+  margin: 0;
+  font-weight: 600;
+  text-align: right;
+}
+
+footer {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: var(--color-secundario);
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--color-acento);
+}
+
+@media (min-width: 600px) {
+  header h1 {
+    font-size: 1.9rem;
+  }
+
+  #cotizaciones {
+    grid-template-columns: 1fr 1fr;
+  }
+}

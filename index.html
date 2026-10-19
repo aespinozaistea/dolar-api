@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cotización del dólar en Argentina</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Cotización del dólar en Argentina</h1>
+  </header>
+
+  <main>
+    <p id="status" role="status" aria-live="polite">Cargando cotizaciones...</p>
+
+    <section id="cotizaciones">
+      <article class="cotizacion" id="bloque-oficial">
+        <h2>Dólar oficial</h2>
+        <dl>
+          <div class="fila">
+            <dt>Compra</dt>
+            <dd id="oficial-compra">No disponible</dd>
+          </div>
+          <div class="fila">
+            <dt>Venta</dt>
+            <dd id="oficial-venta">No disponible</dd>
+          </div>
+          <div class="fila">
+            <dt>Última actualización</dt>
+            <dd id="oficial-fecha">No disponible</dd>
+          </div>
+        </dl>
+      </article>
+
+      <article class="cotizacion" id="bloque-blue">
+        <h2>Dólar blue</h2>
+        <dl>
+          <div class="fila">
+            <dt>Compra</dt>
+            <dd id="blue-compra">No disponible</dd>
+          </div>
+          <div class="fila">
+            <dt>Venta</dt>
+            <dd id="blue-venta">No disponible</dd>
+          </div>
+          <div class="fila">
+            <dt>Última actualización</dt>
+            <dd id="blue-fecha">No disponible</dd>
+          </div>
+        </dl>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Datos provistos por <a href="https://dolarapi.com/" target="_blank" rel="noopener noreferrer">DolarAPI</a>.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
